@@ -52,15 +52,20 @@ File name: `stats_analysis.py`
 
 File name: `visualize.ipynb`
 
-1. Walking Speed Analysis
-    -Scatter plot: ![alt text](Images/Age_vs_WS_scatter.png)
-    -Boxplot: ![alt text](Images/WS_by_Edu_Boxplot.png)
-    -Education-age interaction: ![alt text](Images/Edu_Age_catplot.png)
-2. Cost Analysis
-    -Bar plot of mean costs by insurance type: ![alt text](Images/Mean_Cost_Insurance.png)
-    -Box plot of cost distribution: ![alt text](Images/Visit_Cost_Insurance_boxplot.png)
-3.Combined Visualizations
-    -Pairplot of Key Variables: ![alt text](Images/pairplot.png)
-    -Faceted plots by education level: ![alt text](Images/Facet_Edu.png)
-    -Faceted plots by insurance type: ![alt text](Images/Insurance_Facet.png)
-    -Time trend data: ![alt text](Images/WS_Edu_Time.png)
+Scatter plot: ![alt text](Images/Age_vs_WS_scatter.png)
+
+Boxplot: ![alt text](Images/WS_by_Edu_Boxplot.png)
+
+Education-age interaction: ![alt text](Images/Edu_Age_catplot.png)
+
+Bar plot of mean costs by insurance type: ![alt text](Images/Mean_Cost_Insurance.png)
+
+Box plot of cost distribution: ![alt text]
+
+Pairplot of Key Variables: ![alt text](Images/pairplot.png)
+
+Faceted plots by education level: ![alt text](Images/Facet_Edu.png)
+
+Faceted plots by insurance type: ![alt text](Images/Insurance_Facet.png)
+
+Time trend data: ![alt text](Images/WS_Edu_Time.png)
