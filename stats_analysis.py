@@ -12,7 +12,7 @@ from itertools import combinations
    #- Account for repeated measures
    #- Test for significant trends
 
-df = pd.read_csv("ms_data_analyzed.csv")
+df = pd.read_csv("ms_data.csv")
 
 education_coded = {'High School': 1, 'Some College':2, 'Bachelors':3, 'Graduate':4} #encode education level into numeric values
 df['education_level_coded'] = df['education_level'].map(education_coded) #new column with numeric values
@@ -31,7 +31,7 @@ print(result.summary())
 #middle aged people are walking 0.751 m/s faster than old people (p <0.001)
 #young adults walk 1.070 m/s faster on average than old adults (p < 0.0001
 #as education level increases, so does walking speed (p < 0.0001)
-
+'''
 #2. Analyze costs:
    #- Simple analysis of insurance type effect
    #- Box plots and basic statistics
@@ -97,3 +97,4 @@ print(result.summary())
 #effect of education level on walking speed doesn't significantly differ by age category (p = 0.531)
 #visit cost does not significantly affect walking speed (p = 0.774)
 #there is random variance of individual patient id on walking speed (coeff = 0.216)
+'''

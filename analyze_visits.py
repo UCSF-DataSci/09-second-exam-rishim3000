@@ -1,17 +1,3 @@
-#1. Load and structure the data:
-   #- Read the processed CSV file
-   #- Convert visit_date to datetime
-   #- Sort by patient_id and visit_date
-#2. Add insurance information:
-   #- Read insurance types from `insurance.lst`
-   #- Randomly assign (but keep consistent per patient_id)
-   #- Generate visit costs based on insurance type:
-    #- Different plans have different effects on cost
-    #- Add random variation
-#3. Calculate summary statistics:
-   #- Mean walking speed by education level
-   #- Mean costs by insurance type
-   #- Age effects on walking speed
 import pandas as pd
 import numpy as np
 import random
@@ -66,17 +52,17 @@ def analysis_csv(filename, output):
     df['age_category'] = df['age'].apply(age_category)
     
     walking_speed_education = df.groupby('education_level')['walking_speed'].mean()
-    print(f"Mean Walking Speed By {walking_speed_education}")
+    print(f"mean walking speed by {walking_speed_education}")
 
     cost_by_insurance = df.groupby('insurance_type')['visit_cost'].mean()
-    print(f"Mean Visit Cost By {cost_by_insurance}")
+    print(f"mean visit cost by {cost_by_insurance}")
 
     walking_speed_age = df.groupby('age_category')['walking_speed'].mean()
-    print(f"Mean Walking Speed By {walking_speed_age}")
+    print(f"mean walking speed by {walking_speed_age}")
 
 
 
-    df.to_csv(output, index = False) #write changes to a new CSV 
+    df.to_csv(output, index = False) #write changes to new CSV file 
     
     
 
